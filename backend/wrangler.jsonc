@@ -1,0 +1,17 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "alexandreias-games-backend",
+	"main": "src/index.ts",
+	"compatibility_date": "2026-07-16",
+	"assets": {
+		"directory": "../frontend/dist",
+		"binding": "ASSETS",
+	},
+	"observability": {
+		"enabled": true
+	},
+	"upload_source_maps": true,
+	"compatibility_flags": [
+		"nodejs_compat"
+	]
+}
