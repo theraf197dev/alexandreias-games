@@ -6,6 +6,7 @@
       "./backend/worker-configuration.d.ts",
       "./frontend/worker-configuration.d.ts",
       "vite/client",
+      "node",
     ],
   },
 }
