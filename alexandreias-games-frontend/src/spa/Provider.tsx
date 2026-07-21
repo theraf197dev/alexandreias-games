@@ -4,7 +4,7 @@ import configureStore from './core/store/configureStore';
 import rootSaga from './core/sagas';
 import AppConnector from './containers/app/AppConnector';
 
-export default (props) => {
+export default () => {
     const store = configureStore();
     store.runSaga(rootSaga);
 

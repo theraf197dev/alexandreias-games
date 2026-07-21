@@ -25,7 +25,7 @@
 			"binding": "alexandreias-games-backend",
 			"service": "alexandreias-games-backend"
 		}
-	],
+	]
 	/**
 	 * Smart Placement
 	 * https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement

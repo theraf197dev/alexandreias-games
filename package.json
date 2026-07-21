@@ -4,21 +4,21 @@
   "version": "0.1.0",
   "type": "module",
   "workspaces": [
-    "frontend",
-    "backend"
+    "alexandreias-games-frontend",
+    "alexandreias-games-backend"
   ],
   "scripts": {
-    "dev:frontend": "npm run dev -w frontend",
-    "dev:backend": "npm run dev -w backend",
+    "dev:frontend": "npm run dev -w alexandreias-games-frontend",
+    "dev:backend": "npm run dev -w alexandreias-games-backend",
     "build": "npm run build:frontend && npm run build:backend",
-    "build:frontend": "npm run build -w frontend",
-    "build:backend": "npm run build -w backend",
+    "build:frontend": "npm run build -w alexandreias-games-frontend",
+    "build:backend": "npm run build -w alexandreias-games-backend",
     "preview": "npm run build:frontend && npm --prefix frontend exec vite preview",
-    "deploy": "npm run deploy -w backend",
+    "deploy": "npm run deploy -w alexandreias-games-backend",
     "lint": "eslint .",
     "types": "npm run types:frontend && npm run types:backend",
-    "types:frontend": "npm run types -w frontend",
-    "types:backend": "npm run cf-typegen -w backend"
+    "types:frontend": "npm run types -w alexandreias-games-frontend",
+    "types:backend": "npm run cf-typegen -w alexandreias-games-backend"
   },
   "dependencies": {
     "hono": "^4.12.30",
