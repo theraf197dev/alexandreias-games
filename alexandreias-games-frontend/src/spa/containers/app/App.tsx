@@ -3,13 +3,18 @@ import routes from "../routes";
 import { useEffect } from "react";
 
 const App = ({
-    getTranslations,
+    fetchTranslations,
+    isDesktop,
     translations,
+    updateDeviceResolution,
 }) => {
     const router = createBrowserRouter(routes as unknown as RouteObject[]);
 
     useEffect(() => {
-        getTranslations('en');
+        updateDeviceResolution();
+        window.addEventListener('resize', updateDeviceResolution);
+
+        return () => window.removeEventListener('resize', updateDeviceResolution);
     }, []);
 
     return (
