@@ -15,7 +15,7 @@ const App = ({
         window.addEventListener('resize', updateDeviceResolution);
 
         return () => window.removeEventListener('resize', updateDeviceResolution);
-    }, []);
+    }, [updateDeviceResolution]);
 
     return (
         <>

@@ -5,7 +5,8 @@
   "type": "module",
   "workspaces": [
     "alexandreias-games-frontend",
-    "alexandreias-games-backend"
+    "alexandreias-games-backend",
+    "shared"
   ],
   "scripts": {
     "dev:frontend": "npm run dev -w alexandreias-games-frontend",

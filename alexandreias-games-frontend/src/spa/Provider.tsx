@@ -3,10 +3,11 @@ import configureStore from './core/store/configureStore';
 
 import rootSaga from './core/sagas';
 import AppConnector from './containers/app/AppConnector';
+import type { CustomStore, RootSaga } from '../types/spa/Provider.types';
 
-export default () => {
-    const store = configureStore();
-    store.runSaga(rootSaga);
+const ProviderContainer = () => {
+    const store = configureStore!() as CustomStore;
+    store.runSaga(rootSaga as unknown as RootSaga);
 
     return (
         <Provider store={store}>
@@ -14,3 +15,5 @@ export default () => {
         </Provider>
     );
 };
+
+export default ProviderContainer;

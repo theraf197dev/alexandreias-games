@@ -1,1 +1,1 @@
-export const mergeObject = (object1: any, object2: any) => ({ ...object1, ...object2 });
+export const mergeObject = (object1: unknown, object2: unknown) => ({ ...object1!, ...object2! });
