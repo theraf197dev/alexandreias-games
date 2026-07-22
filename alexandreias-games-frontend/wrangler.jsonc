@@ -24,8 +24,8 @@
 			},
 			"services": [
 				{
-					"binding": "alexandreias-games-backend-staging",
-					"service": "alexandreias-games-backend"
+					"binding": "alexandreias-games-backend",
+					"service": "alexandreias-games-backend-staging"
 				}
 			]
 		},
@@ -35,8 +35,8 @@
 			},
 			"services": [
 				{
-					"binding": "alexandreias-games-backend-production",
-					"service": "alexandreias-games-backend"
+					"binding": "alexandreias-games-backend",
+					"service": "alexandreias-games-backend-production"
 				}
 			]
 		}
