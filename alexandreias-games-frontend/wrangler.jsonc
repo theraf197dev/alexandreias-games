@@ -18,9 +18,9 @@
 		"nodejs_compat"
 	],
 	"env": {
-		"staging": {
+		"preview": {
 			"vars": {
-				"ENVIRONMENT": "staging"
+				"ENVIRONMENT": "preview"
 			},
 			"services": [
 				{
