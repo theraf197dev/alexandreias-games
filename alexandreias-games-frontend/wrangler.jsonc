@@ -21,12 +21,24 @@
 		"staging": {
 			"vars": {
 				"ENVIRONMENT": "staging"
-			}
+			},
+			"services": [
+				{
+					"binding": "alexandreias-games-backend-staging",
+					"service": "alexandreias-games-backend"
+				}
+			]
 		},
 		"production": {
 			"vars": {
 				"ENVIRONMENT": "production"
-			}
+			},
+			"services": [
+				{
+					"binding": "alexandreias-games-backend-production",
+					"service": "alexandreias-games-backend"
+				}
+			]
 		}
 	},
 	"services": [
