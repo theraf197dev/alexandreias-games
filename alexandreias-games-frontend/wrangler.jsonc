@@ -18,7 +18,16 @@
 		"nodejs_compat"
 	],
 	"env": {
-
+		"staging": {
+			"vars": {
+				"ENVIRONMENT": "staging"
+			}
+		},
+		"production": {
+			"vars": {
+				"ENVIRONMENT": "production"
+			}
+		}
 	},
 	"services": [
 		{

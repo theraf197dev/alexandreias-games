@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "wrangler dev --config wrangler.jsonc",
     "build": "vite build",
-    "deploy": "npm run build && wrangler deploy --config wrangler.jsonc",
+    "deploy:prod": "npm run build && wrangler deploy --config wrangler.jsonc --env production",
+    "deploy:dev": "npm run build && wrangler deploy --config wrangler.jsonc --env staging",
     "cf-typegen": "wrangler types --config wrangler.jsonc"
   },
   "dependencies": {
